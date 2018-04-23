@@ -24,14 +24,11 @@
  *  International Registered Trademark & Property of PrestaShop SA
  */
 
-include_once(dirname(__FILE__).'/../../../config/config.inc.php');
-include_once(dirname(__FILE__).'/../../../init.php');
-
 if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-function upgrade_module_4_1_0()
+function upgrade_module_4_2_0()
 {
     if (Shop::isFeatureActive()) {
         foreach (Shop::getShops() as $shop) {
